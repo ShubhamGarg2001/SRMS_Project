@@ -10,8 +10,12 @@
     <style>
         body
         {
-            font-family:font-family: 'Poppins', sans-serif;;
-            background-image: url(https://eskipaper.com/images/blurred-background-1.jpg);
+            font-family:font-family: 'Poppins', sans-serif;
+              height:600px;
+		 	 background-position: center;
+		 	 background-repeat: no-repeat;
+		  	background-size: cover;
+            background-image: url("https://wallpaperaccess.com/full/1216255.jpg");
 
         }
         h1

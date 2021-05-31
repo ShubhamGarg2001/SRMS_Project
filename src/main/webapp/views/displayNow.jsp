@@ -9,8 +9,11 @@
         body
         {
             font-family: Arial, Helvetica, sans-serif;
-            background-image: url(https://eskipaper.com/images/blurred-background-1.jpg);
-
+             height:600px;
+		 	 background-position: center;
+		 	 background-repeat: no-repeat;
+		  	background-size: cover;
+            background-image: url("https://wallpaperaccess.com/full/1216255.jpg");
         }
         h1
         {
