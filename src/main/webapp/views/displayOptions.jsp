@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"> 
-<title>Insert title here</title>
+<title>Welcome Teacher</title>
     <style>
         body
         {
