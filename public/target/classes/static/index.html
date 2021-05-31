@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Record Management System</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="favicon.jpg">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/fb83ca4eeb.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+   body{
+	color:mediumpurple;
+	height:680px;
+}
+   .unique{
+	margin: 2% 3% 5% 0;
+	padding-top:20px;
+	padding-bottom:18px;
+	padding-left:60px;
+	padding-right:60px;
+	 margin-left:43%;
+	 margin-right:10px;
+	 border-radius: 4px;
+	 font-weight: 600;
+	 border:2px solid white;
+}
+.item{
+	margin-left:43.5%;
+}
+.flex{
+	margin-left:30%;
+	display:flex;
+}
+.unique:hover{
+	background:lightgray;
+			padding-top:22px;
+	padding-bottom:20px;
+	padding-left:62px;
+	padding-right:62px;
+}
+.noww{
+	margin-bottom:150px;
+
+}
+@media only screen and (max-width: 600px) {
+  .item{
+		padding-right:68px;
+  }
+
+  .flex{
+	display:inline;
+}
+  .unique{
+	margin-left:30%;
+	}
+	.unique:hover{
+	background:lightgray;
+	padding-top:20px;
+	padding-bottom:18px;
+	padding-left:60px;
+	padding-right:60px;
+}
+  .item:hover{
+	padding-right:68px;
+}
+}
+@media only screen and (max-width: 360px) and (min-width: 300px) 
+{
+	 .item{
+		padding-right:68px;
+  }
+
+  .flex{
+	display:inline;
+}
+  .unique{
+	margin-left:24%;
+	}
+	.unique:hover{
+	background:lightgray;
+	padding-top:20px;
+	padding-bottom:18px;
+	padding-left:60px;
+	padding-right:60px;
+}
+  .item:hover{
+	padding-right:68px;
+}
+   </style>
+    </head>
+    <body>
+        <section id="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img src="logo.jpg"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#"><i class="fas fa-chalkboard-teacher"></i> Welcome: User<span class="sr-only">(current)</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        </section>
+        <section id="banner">
+                    <div>
+                    <div>
+                       <img class="homeImg" src="homeImage.jpg"> 
+                    </div>
+                       <p class="promo-title" style="margin-top: 25px; margin-bottom:25px">Student Record Management System</p>
+                        <div>
+                        <div class="flex">
+                        <form action="/adminLogin">
+                          <button class="unique item" type="submit" type="button"> Admin</button>
+                          </form>
+                        <form action="/teacherLogin">
+                          <button class="unique" type="submit"   type="button">Teacher</button>
+                        </form>
+                        </div>
+                        <form action="/enterRoll">
+                          <button class="unique noww " type="submit"  type="button">Student</button>
+                          </form>  
+                        </div>
+                    </div>
+        </section>
+
+    </body>
+</html>
