@@ -1,5 +1,6 @@
 package com.example.databse.remote.demoremote.controller;
 
+import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -129,8 +130,11 @@ public String updateLast(@PathVariable String rollNo,@RequestParam String name, 
 		path=fileService.upload(file);		
 
 	String gender=studentService.getStudentDetails(rollNo).getGender();
-	model.addAttribute("message",studentService.updateStudentDetails(rollNo, name, age, city, gender, path,ca,aca,edg,c,daa,maths,dsa,os,cd,at,java,python));
-	model.addAttribute("student",studentService.getStudentDetails(rollNo));
+	studentService.getStudentDetails(rollNo).getAttendence();
+	Student s=new Student(rollNo, name, age, city, gender, path,new Result(new Sem1(ca, aca, edg, c), new Sem2(daa, maths, dsa, os), new Sem3(cd, at, java, python)),studentService.getStudentDetails(rollNo).getAttendence());
+	studentService.saveStudentDetails(s);
+	model.addAttribute("message","Student with rollno "+rollNo +" is updated!!");
+	model.addAttribute("student",s);
 
 	return "updateFinal";
 }

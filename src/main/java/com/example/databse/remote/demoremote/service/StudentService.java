@@ -22,31 +22,6 @@ public Student getStudentDetails(String rollNo) throws InterruptedException, Exe
 Firestore dbFirestore = FirestoreClient.getFirestore();  
 return dbFirestore.collection("user").document(rollNo).get().get().toObject(Student.class);  
 }  
-public String updateStudentDetails(String rollNo,String name,String age,String city,String gender,String path,String ca,String edg,String aca,String c,String daa,String maths,String dsa,String os,String cd,String at,String java,String python) throws InterruptedException, ExecutionException {  
-Firestore dbFirestore = FirestoreClient.getFirestore();  
-dbFirestore.collection("user").document(rollNo).update("name",name);
-dbFirestore.collection("user").document(rollNo).update("age",age);
-dbFirestore.collection("user").document(rollNo).update("city",city);
-dbFirestore.collection("user").document(rollNo).update("gender",gender);
-dbFirestore.collection("user").document(rollNo).update("path",path);
-dbFirestore.collection("user").document(rollNo).update("result.sem1.ca",ca);
-dbFirestore.collection("user").document(rollNo).update("result.sem1.aca",aca);
-dbFirestore.collection("user").document(rollNo).update("result.sem1.c",c);
-dbFirestore.collection("user").document(rollNo).update("result.sem1.edg",edg);
-dbFirestore.collection("user").document(rollNo).update("result.sem2.daa",daa);
-dbFirestore.collection("user").document(rollNo).update("result.sem2.dsa",dsa);
-dbFirestore.collection("user").document(rollNo).update("result.sem2.maths",maths);
-dbFirestore.collection("user").document(rollNo).update("result.sem2.operatingSystem",os);
-dbFirestore.collection("user").document(rollNo).update("result.sem3.automataTheory",at);
-dbFirestore.collection("user").document(rollNo).update("result.sem3.compilerDesign",cd);
-dbFirestore.collection("user").document(rollNo).update("result.sem3.java",java);
-dbFirestore.collection("user").document(rollNo).update("result.sem3.python",python);
-
-
-return "Student with rollno "+rollNo+" is updated!!";
-
-
-}  
 public String deleteStudent(String rollNo) {  
 Firestore dbFirestore = FirestoreClient.getFirestore();  
 dbFirestore.collection("user").document(rollNo).delete();  
