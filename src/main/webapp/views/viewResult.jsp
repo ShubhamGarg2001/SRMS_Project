@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>academic Details</title>
+<title>Academic Details</title>
         <style>
             body{
                 font-family: Arial, Helvetica, sans-serif;
