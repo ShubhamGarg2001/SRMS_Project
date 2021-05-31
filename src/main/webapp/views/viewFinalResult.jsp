@@ -13,8 +13,7 @@
         }
         h1{
             text-align: center;
-            color: white;
-            background-color: #4CAF50;
+            color: #4CAF50;
         }
         h3{
             text-align: center;
@@ -45,7 +44,7 @@
     </style>
 </head>
 <body>
-<h1>View Student Result</h1>
+<h1>Student Result</h1>
 <br/>
 <h3>1st Sessional</h3>   
         <table class="students">

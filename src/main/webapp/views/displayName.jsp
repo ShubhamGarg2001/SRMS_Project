@@ -6,10 +6,13 @@
 <meta charset="ISO-8859-1">
 <title>Welcome Student</title>
     <style>
+    html{
+    height:100%;
+    }
         body
         {
             font-family: Arial, Helvetica, sans-serif;
-             height:600px;
+             height:100%;
 		 	 background-position: center;
 		 	 background-repeat: no-repeat;
 		  	background-size: cover;

@@ -60,7 +60,7 @@
     </style>
 </head>
 <body>
-<form action="/studentAttendenceFinal" method="get">
+<form action="/studentAttendenceFinal" method="post">
 <h1>View And Update Attendence</h1>
 <h3>${message}</h3>
 <table id="students">

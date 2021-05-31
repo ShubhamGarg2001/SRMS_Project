@@ -9,7 +9,7 @@
         <style>
             body{
                 font-family: Arial, Helvetica, sans-serif;
-               	 background: url("https://st3.depositphotos.com/1393014/12821/v/950/depositphotos_128213204-stock-illustration-simple-light-vector-background.jpg") no-repeat center center fixed; 
+               	 background: url("https://st3.depositphotos.com/1393014/12821/v/950/depositphotos_128213204-stock-illustration-simple-light-vector-background.jpg"); 
 				  height: 100%;
 				  background-position: center;
 				  background-repeat: no-repeat;

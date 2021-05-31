@@ -192,7 +192,7 @@ public String viewResult()
 	return "viewResult";
 }
 
-@GetMapping("/studentAttendenceFinal")
+@PostMapping("/studentAttendenceFinal")
 public String updateNameFinal(@RequestParam int[] attendence,Model model) throws InterruptedException, ExecutionException
 {
 	model.addAttribute("message",studentService.updateStudentAttendence(attendence));

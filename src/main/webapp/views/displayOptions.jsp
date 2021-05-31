@@ -8,10 +8,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"> 
 <title>Welcome Teacher</title>
     <style>
+     html{
+    height:100%;
+    }
         body
         {
             font-family:font-family: 'Poppins', sans-serif;
-              height:600px;
+              height:100%;
 		 	 background-position: center;
 		 	 background-repeat: no-repeat;
 		  	background-size: cover;
