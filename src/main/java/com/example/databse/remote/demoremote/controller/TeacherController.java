@@ -1,5 +1,7 @@
 package com.example.databse.remote.demoremote.controller;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ExecutionException;
 
@@ -199,8 +201,19 @@ public String viewResult()
 @PostMapping("/studentAttendenceFinal")
 public String updateNameFinal(@RequestParam int[] attendence,Model model) throws InterruptedException, ExecutionException
 {
-	model.addAttribute("message",studentService.updateStudentAttendence(attendence));
-	model.addAttribute("students", studentService.getAllStudentDetails());
+	//model.addAttribute("message",studentService.updateStudentAttendence(attendence));
+	List<Student>students=studentService.getAllStudentDetails();
+	List<Student>studentsDisplay=new ArrayList<>();
+	int i=0;
+	for(Student student:students)
+	{
+		student.setAttendence(new Attendence(attendence[i],attendence[i+1],attendence[i+2], attendence[i+3]));
+		studentService.saveStudentDetails(student);
+		studentsDisplay.add(student);
+		i=i+4;
+	}
+	model.addAttribute("students", studentsDisplay);
+	model.addAttribute("message","Attendance Updated!!");
 	return "updateRollnoView";
 }
 @PostMapping("/updateAttendence")
