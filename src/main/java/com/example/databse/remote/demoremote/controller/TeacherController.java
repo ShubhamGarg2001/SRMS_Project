@@ -201,7 +201,7 @@ public String viewResult()
 @PostMapping("/studentAttendenceFinal")
 public String updateNameFinal(@RequestParam int[] attendence,Model model) throws InterruptedException, ExecutionException
 {
-	//model.addAttribute("message",studentService.updateStudentAttendence(attendence));
+	//updating student attendace by teacher
 	List<Student>students=studentService.getAllStudentDetails();
 	List<Student>studentsDisplay=new ArrayList<>();
 	int i=0;

@@ -34,6 +34,7 @@ public class AdminLogin {
 			return "loginIt";
 		}
 	}
+	
 	@PostMapping("/addTeacher")
 	public String addTeacher()
 	{
